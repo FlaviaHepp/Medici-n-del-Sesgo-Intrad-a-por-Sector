@@ -103,3 +103,47 @@ precios_diarios (ticker_id, fecha)
 
 ## 👤Autora
 Flavia Hepp Proyecto de SQL aplicó un análisis de riesgo basado en eventos.
+
+***
+⏱️ **El mercado también tiene “personalidad” dentro del día**
+
+No todo ocurre en el largo plazo.
+Hay sectores que tienden a subir durante la jornada… y otros que pierden fuerza.
+
+👉 Analicé el **sesgo intradía por sector**, midiendo el rendimiento promedio entre la apertura y el cierre en el último mes.
+
+💡 **Insight clave:**
+Algunos sectores muestran un **sesgo sistemático de compra durante el día**, cerrando consistentemente por encima de su precio de apertura.
+
+---
+
+📊 **¿Qué medí?**
+
+* Rendimiento intradía: *(Close - Open) / Open*
+* Promedio por sector
+* Ventana de análisis: últimos 30 días
+
+---
+
+🧠 **¿Cómo interpretarlo?**
+
+* Sectores con rendimiento intradía positivo → presión compradora durante la jornada
+* Sectores con rendimiento negativo → ventas predominantes o toma de ganancias
+* Posible evidencia de patrones de comportamiento repetitivos (*intraday bias*)
+
+---
+
+⚡ **¿Por qué importa?**
+
+Porque abre la puerta a estrategias como:
+
+* **Open-to-Close trading**
+* Ajuste de timing en ejecuciones institucionales
+* Detección de flujos sistemáticos por sector
+
+---
+
+📌 Pregunta para la comunidad:
+¿Han identificado sesgos intradía consistentes en ciertos sectores o mercados?
+
+#QuantFinance #Trading #DataScience #StockMarket #Intraday #Analytics #SQL #Alpha
